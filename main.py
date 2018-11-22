@@ -21,16 +21,16 @@ if __name__ == "__main__":
     if args.iata:
         iata = filters.iata(jsonData)
         print(iata)
-    elif args.cities:
+    if args.cities:
         cities = filters.cities(jsonData)
         print(cities)
-    elif args.names:
+    if args.names:
         airportName = filters.airport_name(jsonData)
         print(airportName)
-    elif args.coords:
+    if args.coords:
         coordinates = filters.coords(jsonData)
         print(coordinates)
-    elif args.full:
+    if args.full:
         iata = filters.iata(jsonData)
         print(iata)
         cities = filters.cities(jsonData)
