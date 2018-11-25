@@ -8,6 +8,7 @@ if __name__ == "__main__":
 
     # main variables
     get_uk_airport = api_airports.InputApi()
+    get_uk_airport.check_connection()
     jsonData = get_uk_airport.get_api()
     df = pandas.DataFrame({})
 
