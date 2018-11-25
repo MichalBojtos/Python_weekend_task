@@ -6,10 +6,12 @@ import pandas
 
 if __name__ == "__main__":
 
+    # main variables
     get_uk_airport = api_airports.InputApi()
     jsonData = get_uk_airport.get_api()
     df = pandas.DataFrame({})
 
+    # use the argparse library for define of user options
     parser = argparse.ArgumentParser(description='Description of your program')
     parser.add_argument('--iata', action='store_true', help='IATA codes')
     parser.add_argument('--cities', action='store_true', help='cities with airports')
@@ -19,6 +21,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
+    # logic for input options
     if args.iata:
         json_to_df.output_iata(df, jsonData)
     if args.cities:
@@ -33,6 +36,7 @@ if __name__ == "__main__":
         json_to_df.output_names(df, jsonData)
         json_to_df.output_coords(df, jsonData)
 
+    # logic for printing of output
     if df.empty:
         json_to_df.output_iata(df, jsonData)
         json_to_df.output_names(df, jsonData)

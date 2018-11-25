@@ -2,6 +2,7 @@ from urllib.request import urlopen
 import json
 
 
+# communication with skypicker.com API and getting main JSON result
 class InputApi:
 
         def __init__(self):

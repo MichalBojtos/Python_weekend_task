@@ -1,3 +1,4 @@
+# filtering of main JSON - IATA
 def iata(json):
     iata_code = []
     for i in range(len(json['locations'])):
@@ -5,6 +6,7 @@ def iata(json):
     return iata_code
 
 
+# filtering of main JSON - Cities
 def cities(json):
     name = []
     for i in range(len(json['locations'])):
@@ -12,6 +14,7 @@ def cities(json):
     return name
 
 
+# filtering of main JSON - Name of Airports
 def airport_name(json):
     airport = []
     for i in range(len(json['locations'])):
@@ -19,6 +22,7 @@ def airport_name(json):
     return airport
 
 
+# filtering of main JSON - Coordinates
 def coords(json):
     coordinates = []
     for i in range(len(json['locations'])):
