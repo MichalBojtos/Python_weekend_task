@@ -1,7 +1,7 @@
 # Python_weekend_task
 This task is about getting information from the skypicker.com API and creating of specific output (IATA, Cities, Names of Airports, Coordinates).
 
-More info about assignment: https://gist.github.com/fholec/ecc9c8a3bb82fdf3eabab66efb7c594b
+More info about an assignment: https://gist.github.com/fholec/ecc9c8a3bb82fdf3eabab66efb7c594b
 
 ## Project Structure:
 ```
